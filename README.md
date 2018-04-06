@@ -11,24 +11,40 @@ microservice for signed agreements
 All API calls needs an Authorization header with valid jwt
 
 ```bash
-$ curl -v -H "Authorization: Bearer <INSERT TOKEN>" https://agreements.service.io/agreements/
+$ http GET https://agreements.service.io/agreements/5ac770926ae9e948ebc0bb47 'Authorization: Bearer <INSERT TOKEN>'
 ```
 
 ### ```PUT /agreements```
 
 Add a new agreement
 
+```bash
+$ http PUT https://agreements.service.io/agreements userid=12345 agreementId=98765 'Authorization: Bearer <INSERT TOKEN>'
+```
+
 ### ```GET /agreements/:id```
 
 Get a specific agreement
+
+```bash
+$ http GET https://agreements.service.io/agreements/5ac770926ae9e948ebc0bb47 'Authorization: Bearer <INSERT TOKEN>'
+```
+
+### ```POST /agreements/:id```
+
+Updates agreement
+
+```bash
+$ http POST https://agreements.service.io/agreements/5ac770926ae9e948ebc0bb47 status=signed 'Authorization: Bearer <INSERT TOKEN>'
+```
 
 ### ```POST /agreements/search```
 
 Search agreements
 
-### ```POST /agreements/:id```
-
-Updates agreements
+```bash
+$ http POST https://agreements.service.io/agreements/search status=signed 'Authorization: Bearer <INSERT TOKEN>'
+```
 
 ## Deployment - ZEIT/Now
 
