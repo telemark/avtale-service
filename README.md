@@ -4,7 +4,7 @@
 
 # avtale-service
 
-microservice for signed agreements
+microservice for agreements
 
 ## API
 
