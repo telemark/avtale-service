@@ -40,7 +40,7 @@
   "homepage": "https://github.com/telemark/avtale-service#readme",
   "now": {
     "alias": [
-      "avtaler.service.t-fk.no"
+      "avtale.service.t-fk.no"
     ],
     "type": "npm",
     "dotenv": "production.env",
