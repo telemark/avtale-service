@@ -1,6 +1,5 @@
 [![Build Status](https://travis-ci.org/telemark/avtale-service.svg?branch=master)](https://travis-ci.org/telemark/avtale-service)
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
-[![Greenkeeper badge](https://badges.greenkeeper.io/telemark/avtale-service.svg)](https://greenkeeper.io/)
 
 # avtale-service
 
@@ -61,5 +60,3 @@ $ npm run deploy
 ## License
 
 [MIT](LICENSE)
-
-![Robohash image of avtale-service](https://robots.kebabstudios.party/avtale-service.png "Robohash image of avtale-service")
