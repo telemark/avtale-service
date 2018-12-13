@@ -16,7 +16,7 @@ const router = Router()
 router.use(cors())
 
 // JWT
-router.use(jwt({secret: config.JWT_SECRET}).unless({path: ['/', '/favicon.ico']}))
+router.use(jwt({ secret: config.JWT_SECRET }).unless({ path: ['/', '/favicon.ico'] }))
 router.use(handleUnauthorized)
 
 // ROUTES
